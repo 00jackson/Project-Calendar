@@ -1,0 +1,94 @@
+/* Base styles for FAQ section */
+.faq-section {
+    margin-top: 30px;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 55px;
+}
+
+/* Tagline styles */
+.section-tagline {
+    font-size: 12px;
+    color: #666;
+}
+
+
+.section-highlight h1 {
+    font-size: 50px;
+    margin-top: -8px;
+}
+
+/* FAQ item styles */
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.faq-question2,
+.faq-question4,
+.faq-question1,
+.faq-question3 {
+    display: flex;
+    /* align-items: left; */
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+
+}
+
+.faq-question2,
+.faq-question4 {
+    background-color: #fff1e6;
+}
+
+.faq-question span {
+    flex-grow: 1;
+}
+
+/* Icon styles */
+.icon-e5c6 {
+    width: 20px;
+    height: 20px;
+}
+
+/* Answer styles */
+.faq-answer {
+    display: none;
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    align-items: left;
+}
+
+.faq-answer.open {
+    display: block;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 30px 10px;
+    }
+
+    .section-highlight {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        padding: 10px;
+    }
+
+    .faq-answer {
+        padding: 8px;
+    }
+
+    .faq-item {
+        padding: 8px;
+    }
+}

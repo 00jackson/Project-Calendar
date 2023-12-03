@@ -1,0 +1,236 @@
+/* Styles for Pricing and Plans section */
+
+.pricing-plans {
+    margin-top: 30px;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 55px;
+}
+
+.section-tagline {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.section-highlight {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+.switch {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: #ff87ab;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    /* Center the switch horizontally */
+    font-weight: 600;
+    /* margin: 0 auto; */
+}
+
+.switch label {
+    flex: 1;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.switch span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 4px;
+    margin: -2px 0 0 -4px;
+    /* background: #fff; */
+    display: block;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease;
+}
+
+.switch span:after {
+    content: "";
+    position: absolute;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#annually:checked~.switch span {
+    transform: rotate(135deg);
+    left: calc(50% + 55px);
+}
+
+#monthly:checked~.switch span {
+    transform: rotate(-45deg);
+    left: calc(50% - 55px);
+}
+
+#annually:checked~.switch label[for="annually"],
+#monthly:checked~.switch label[for="monthly"] {
+    color: #fff;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card1,
+.pricing-card2,
+.pricing-card3 {
+    background-color: #f8f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.pricing-card1 h2 {
+    background-color: #fae0e4;
+    text-align: left;
+}
+
+.pricing-card2 h2 {
+    background-color: #f9bec7;
+    text-align: left
+}
+
+.pricing-card3 h2 {
+    background-color: #f9bec7;
+    text-align: left;
+    align-items: left;
+}
+
+.price-info {
+    font-size: 15px;
+    font-weight: 200;
+    margin: 10px 0;
+
+}
+
+.price {
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.get-started-btn {
+    background-color: #ff87ab;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #ff5d8f;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.included-features {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.included-features li {
+    margin-top: 5px;
+    padding-top: 1px;
+    list-style: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+.best-deal {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.pricing-card2 .best-deal {
+    background-color: #ffeedd;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .section-highlight {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .switch {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+
+    }
+
+    .switch label {
+        font-size: 12px;
+        
+    }
+
+    .switch span,
+    .switch span:after {
+        width: 15px;
+        height: 3px;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .price-info {
+        font-size: 20px;
+    }
+
+    .get-started-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .details {
+        font-size: 12px;
+    }
+
+    .included-features {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .best-deal {
+        margin-bottom: 0;
+    }
+}
